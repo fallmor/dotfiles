@@ -1,0 +1,122 @@
+{
+  // Zed settings
+  //
+  // For information on how to configure Zed, see the Zed
+  // documentation: https://zed.dev/docs/configuring-zed
+  
+  // Theme
+  "theme": "One Dark",
+  "ui_font_size": 16,
+  "buffer_font_size": 14,
+  "buffer_font_family": "JetBrains Mono",
+  
+  // Editor
+  "relative_line_numbers": true,
+  "vim_mode": true,
+  "autosave": "on_focus_change",
+  "format_on_save": "on",
+  "tab_size": 2,
+  "soft_wrap": "none",
+  
+  // Terminal
+  "terminal": {
+    "font_family": "JetBrains Mono",
+    "font_size": 14,
+    "shell": {
+      "program": "zsh"
+    }
+  },
+  
+  // Git
+  "git": {
+    "inline_blame": {
+      "enabled": true
+    }
+  },
+  
+  // LSP
+  "lsp": {
+    "gopls": {
+      "initialization_options": {
+        "usePlaceholders": true,
+        "completeUnimported": true,
+        "analyses": {
+          "unusedparams": true,
+          "shadow": true
+        },
+        "staticcheck": true
+      }
+    }
+  },
+  
+  // Languages
+  "languages": {
+    "Go": {
+      "format_on_save": "on",
+      "formatter": "language_server",
+      "code_actions_on_format": {
+        "source.organizeImports": true
+      }
+    },
+    "Nix": {
+      "format_on_save": "on",
+      "formatter": {
+        "external": {
+          "command": "nixpkgs-fmt",
+          "arguments": []
+        }
+      }
+    },
+    "YAML": {
+      "format_on_save": "on",
+      "tab_size": 2
+    },
+    "JSON": {
+      "format_on_save": "on",
+      "tab_size": 2
+    }
+  },
+  
+  // File exclusions
+  "file_scan_exclusions": [
+    "**/.git",
+    "**/.svn",
+    "**/.hg",
+    "**/CVS",
+    "**/.DS_Store",
+    "**/Thumbs.db",
+    "**/.classpath",
+    "**/.settings",
+    "**/node_modules",
+    "**/.venv",
+    "**/venv",
+    "**/target",
+    "**/result"
+  ],
+  
+  // Collaboration
+  "collaboration_panel": {
+    "button": true
+  },
+  
+  // Inlay hints
+  "inlay_hints": {
+    "enabled": true
+  },
+  
+  // Tabs
+  "tabs": {
+    "git_status": true
+  },
+  
+  // Project panel
+  "project_panel": {
+    "button": true,
+    "default_width": 240,
+    "dock": "left",
+    "file_icons": true,
+    "folder_icons": true,
+    "git_status": true,
+    "indent_size": 20
+  }
+}
